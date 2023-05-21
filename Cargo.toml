@@ -65,7 +65,7 @@ default = ["remote"]
 doc-only = ["tch/doc-only"]
 all-tests = []
 remote = ["cached-path", "dirs", "lazy_static"]
-download-libtorch = ["torch-sys/download-libtorch"]
+download-libtorch = ["tch/download-libtorch"]
 
 [package.metadata.docs.rs]
 features = ["doc-only"]
@@ -90,6 +90,6 @@ anyhow = "1"
 csv = "1"
 criterion = "0.4"
 tokio = { version = "1.24", features = ["sync", "rt-multi-thread", "macros"] }
-torch-sys = "0.13.0"
+#torch-sys = "0.13.0"
 tempfile = "3"
 itertools = "0.10"
